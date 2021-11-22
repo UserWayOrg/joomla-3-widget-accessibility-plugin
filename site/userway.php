@@ -35,7 +35,7 @@ class plgSystemUserway extends JPlugin
         return;
       }
 
-      JHtml::script('https://cdn.userway.org/widget.js?account=' . $entry->account_id);
+      JHtml::script('https://cdn.qa.userway.dev/widget.js?account=' . $entry->account_id);
     } catch (Exception $e) {
     }
   }
