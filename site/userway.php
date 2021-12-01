@@ -1,7 +1,7 @@
 <?php
 /*
  *  @package Module UserWay for Joomla! 3.10.3
- *  @version userway.php: 181124 you radik
+ *  @version userway.php: 199 you radik
  *  @author UserWay Development Team
  *  @copyright (C) 2021 - UserWay Inc.
  *  @license GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html
@@ -35,10 +35,9 @@ class plgSystemUserway extends JPlugin
         return;
       }
 
-      JHtml::script('https://cdn.qa.userway.dev/widget.js?account=' . $entry->account_id);
+      JHtml::script('https://cdn.userway.org/widget.js?account=' . $entry->account_id);
     } catch (Exception $e) {
+
     }
   }
 }
-
-?>
