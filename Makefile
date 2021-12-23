@@ -12,4 +12,5 @@ build:
 	mkdir joomla-widget-accessibility-plugin;
 	cp -r site joomla-widget-accessibility-plugin;
 	cp manifest.xml joomla-widget-accessibility-plugin;
+	find ./joomla-widget-accessibility-plugin -name '.DS_Store' -type f -delete
 	zip -r joomla-widget-accessibility-plugin.zip joomla-widget-accessibility-plugin;
